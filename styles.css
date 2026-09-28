@@ -270,6 +270,12 @@ p  { color: var(--ink-60); }
 
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
 
+/* Katalog produk: tetap rata tengah walau jumlah produk berubah */
+.product-grid {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 26px;
+}
+.product-grid > .product { flex: 1 1 330px; max-width: 420px; }
+
 /* ---------- Cards ---------- */
 .card { border-radius: var(--radius-lg); padding: 34px 30px; transition: transform .3s ease, box-shadow .3s ease; }
 .card:hover { transform: translateY(-7px); box-shadow: var(--shadow-md); }
