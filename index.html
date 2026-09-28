@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYCLEA — From Waste to Clean | Daur Ulang Minyak Jelantah</title>
+  <meta name="description" content="CYCLEA adalah platform ekonomi sirkular yang menghubungkan masyarakat dengan sistem pengumpulan minyak jelantah rumah tangga untuk diolah menjadi produk bernilai seperti sabun." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧴</text></svg>" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="#beranda" class="brand">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3c-4 3.2-6 6.2-6 9.4A6 6 0 0 0 18 12.4C18 9.2 16 6.2 12 3Z" fill="currentColor" opacity=".28"/>
+            <path d="M12 3c-4 3.2-6 6.2-6 9.4A6 6 0 0 0 18 12.4C18 9.2 16 6.2 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M12 20.5V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">CYCLEA</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda" class="active">Beranda</a></li>
+        <li><a href="#masalah">Masalah</a></li>
+        <li><a href="#cara-kerja">Cara Kerja</a></li>
+        <li><a href="#fitur">Fitur</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#dampak">Dampak</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li class="nav-auth"><a href="login.html">Masuk</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Cari" id="searchBtn">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <a href="#setor" class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" class="btn-ic"><path d="M12 4v10m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 18h14" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+          Setor Minyak
+        </a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="beranda">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="pill-badge">
+          <span class="dot"></span> Ekonomi Sirkular • Rumah Tangga
+        </span>
+        <h1>
+          From Waste<br />
+          to <span class="hl">Clean</span>
+        </h1>
+        <p class="lead">
+          CYCLEA menghubungkan rumah tangga dengan sistem pengumpulan minyak jelantah,
+          lalu mengolahnya menjadi produk bernilai seperti sabun — bersih untuk rumah,
+          aman untuk lingkungan.
+        </p>
+        <div class="hero-cta">
+          <a href="#setor" class="btn btn-lime">Ajukan Setoran
+            <svg viewBox="0 0 24 24" fill="none" class="btn-ic"><path d="M5 12h13m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#cara-kerja" class="btn btn-ghost">Lihat Cara Kerja</a>
+        </div>
+
+        <div class="hero-mini-stats">
+          <div><strong data-count="12840">0</strong><span>Liter terkumpul</span></div>
+          <div class="sep"></div>
+          <div><strong data-count="76">0</strong><span>Titik pengumpulan</span></div>
+          <div class="sep"></div>
+          <div><strong data-count="2150">0</strong><span>Keluarga terlibat</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <svg viewBox="0 0 420 380" class="hero-illustration" role="img" aria-label="Ilustrasi minyak jelantah diubah menjadi sabun">
+            <defs>
+              <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#86efac"/><stop offset="100%" stop-color="#22c55e"/>
+              </linearGradient>
+              <linearGradient id="gBottle" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fde68a"/><stop offset="100%" stop-color="#f59e0b"/>
+              </linearGradient>
+              <linearGradient id="gSoap" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#d1fae5"/>
+              </linearGradient>
+            </defs>
+            <circle cx="210" cy="190" r="150" fill="#ffffff" opacity=".07"/>
+            <circle cx="210" cy="190" r="112" fill="#ffffff" opacity=".06"/>
+
+            <!-- used-oil bottle -->
+            <g transform="translate(56 120)">
+              <rect x="0" y="34" width="86" height="118" rx="24" fill="url(#gBottle)" opacity=".95"/>
+              <rect x="24" y="6" width="38" height="34" rx="10" fill="#b45309"/>
+              <rect x="14" y="66" width="58" height="54" rx="14" fill="#fff" opacity=".85"/>
+              <path d="M28 92h30M28 104h20" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/>
+            </g>
+
+            <!-- arrow -->
+            <path d="M156 190h96" stroke="#a3e635" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 16"/>
+            <path d="M244 178l16 12-16 12" fill="none" stroke="#a3e635" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- soap bar -->
+            <g transform="translate(272 132)">
+              <rect x="0" y="0" width="104" height="76" rx="22" fill="url(#gSoap)"/>
+              <rect x="16" y="22" width="48" height="9" rx="4.5" fill="#22c55e" opacity=".7"/>
+              <rect x="16" y="40" width="30" height="9" rx="4.5" fill="#22c55e" opacity=".45"/>
+              <circle cx="82" cy="26" r="9" fill="#86efac"/>
+            </g>
+
+            <!-- leaf -->
+            <g transform="translate(300 226)">
+              <path d="M6 60C6 26 34 4 68 4c0 34-24 56-62 56Z" fill="url(#gLeaf)"/>
+              <path d="M62 12C40 24 24 40 12 58" stroke="#065f46" stroke-width="3.5" stroke-linecap="round" opacity=".55"/>
+            </g>
+
+            <!-- bubbles -->
+            <circle cx="120" cy="86" r="12" fill="#fff" opacity=".25"/>
+            <circle cx="152" cy="60" r="7" fill="#fff" opacity=".35"/>
+            <circle cx="330" cy="96" r="9" fill="#fff" opacity=".3"/>
+            <circle cx="96" cy="300" r="16" fill="#fff" opacity=".14"/>
+            <circle cx="356" cy="318" r="11" fill="#fff" opacity=".2"/>
+          </svg>
+
+          <div class="float-chip chip-1">
+            <span class="chip-ic">🧼</span>
+            <div><strong>1 Liter</strong><span>≈ 3 batang sabun</span></div>
+          </div>
+          <div class="float-chip chip-2">
+            <span class="chip-ic">🌱</span>
+            <div><strong>−87% Polusi</strong><span>air tanah terlindungi</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- estimator / search bar ala referensi -->
+    <div class="container">
+      <div class="estimator reveal" id="setor">
+        <div class="est-field">
+          <label for="berat">Perkiraan berat setoran (kg)</label>
+          <div class="est-input">
+            <input type="range" id="berat" min="1" max="20" value="3" />
+            <output id="beratOut">3 kg</output>
+          </div>
+        </div>
+        <div class="est-field">
+          <label for="titik">Titik pengumpulan</label>
+          <select id="titik">
+            <option>Agent Warung Sejahtera — 0.8 km</option>
+            <option>Dropbox Pasar Baru — 1.4 km</option>
+            <option>Agent Kopmer Jaya — 2.1 km</option>
+            <option>Jemput ke rumah — 3.0 km</option>
+          </select>
+        </div>
+        <div class="est-result">
+          <span>Estimasi nilai</span>
+          <strong id="estHarga">Rp 13.500</strong>
+          <em id="estPoin">+150 poin CYCLEA</em>
+        </div>
+        <a href="#cara-kerja" class="btn btn-dark">Ajukan Setoran</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MASALAH ============ -->
+  <section class="section" id="masalah">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">● Masalah</span>
+        <h2>Minyak jelantah rumah tangga<br />yang <span class="hl-dark">terbuang sia-sia</span></h2>
+        <p>Satu liter minyak jelantah yang dibuang ke saluran air dapat mencemari hingga 100.000 liter air bersih. CYCLEA hadir untuk mengubah kebiasaan tersebut.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card card-white reveal">
+          <div class="card-ic ic-red">⚠️</div>
+          <h3>Mencemari Sumber Air</h3>
+          <p>Jelantah tersumbat di saluran air dan merusak ekosistem sungai bila dibuang sembarangan.</p>
+        </article>
+        <article class="card card-lime reveal">
+          <div class="card-ic ic-dark">🗑️</div>
+          <h3>Sekadar Menjadi Limbah</h3>
+          <p>Dibuang begitu saja padahal masih memiliki potensi diolah kembali menjadi produk berguna.</p>
+        </article>
+        <article class="card card-dark reveal">
+          <div class="card-ic ic-light">💸</div>
+          <h3>Nilai Ekonomi Hilang</h3>
+          <p>Rumah tangga tidak mendapat apa-apa, sementara biaya pengolahan limbah terus bertambah.</p>
+        </article>
+      </div>
+
+      <div class="fact-band reveal">
+        <div class="fact"><strong data-count="57">0</strong><span>juta liter jelantah dihasilkan rumah tangga Indonesia tiap tahun</span></div>
+        <div class="fact"><strong data-count="70">0</strong><span>% di antaranya dibuang ke drainase</span></div>
+        <div class="fact"><strong data-count="100000">0</strong><span>liter air tercemar oleh 1 liter minyak</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARA KERJA ============ -->
+  <section class="section section-tint" id="cara-kerja">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">● Cara Kerja CYCLEA</span>
+        <h2>Alur sederhana, dampak nyata</h2>
+        <p>Empat langkah dari dapur Anda menuju produk baru — tanpa repot, tanpa biaya.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step-no">01</div>
+          <div class="step-ic">🫙</div>
+          <h3>Kumpulkan</h3>
+          <p>Simpan minyak jelantah bekas gorengan di wadah tertutup di rumah.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-no">02</div>
+          <div class="step-ic">📍</div>
+          <h3>Setor ke Agen</h3>
+          <p>Titipkan ke agen pengumpulan terdekat atau ajukan jemput lewat CYCLEA.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-no">03</div>
+          <div class="step-ic">🏭</div>
+          <h3>Diolah</h3>
+          <p>Minyak disaring, dimurnikan, lalu diproses melalui reaksi saponifikasi.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-no">04</div>
+          <div class="step-ic">🧼</div>
+          <h3>Jadi Produk</h3>
+          <p>Menghasilkan sabun cuci, pembersih serbaguna, hingga bahan baku industri.</p>
+        </article>
+      </div>
+
+      <div class="how-band reveal">
+        <div class="how-copy">
+          <span class="eyebrow light">● Daur tertutup</span>
+          <h3>Satu siklus, tiga manfaat</h3>
+          <p>Lingkungan lebih bersih, rumah tangga mendapat tambahan saldo, dan industri mendapat bahan baku ramah lingkungan.</p>
+          <a href="#produk" class="btn btn-lime">Lihat Produk Olahan
+            <svg viewBox="0 0 24 24" fill="none" class="btn-ic"><path d="M5 12h13m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="how-metrics">
+          <div class="metric"><span>🕐</span><div><strong>±10 menit</strong><small>Waktu setor di agen</small></div></div>
+          <div class="metric"><span>💵</span><div><strong>Rp 4.500/kg</strong><small>Nilai awal setoran</small></div></div>
+          <div class="metric"><span>♻️</span><div><strong>100% didaur</strong><small>Tidak ada limbah sisa</small></div></div>
+          <div class="metric"><span>🚚</span><div><strong>Gratis jemput</strong><small>Min. setoran 5 kg</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FITUR APLIKASI ============ -->
+  <section class="section" id="fitur">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">● Fitur Platform</span>
+        <h2>Yang bisa dilakukan pengguna CYCLEA</h2>
+        <p>Rencana pengembangan fitur dikelompokkan ke dalam empat tahap (fase) peluncuran.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature reveal">
+          <div class="feature-top"><span class="f-ic">🗺️</span><span class="fase">Fase 1</span></div>
+          <h3>Peta Titik Pengumpulan</h3>
+          <ul>
+            <li>Cari titik terdekat</li>
+            <li>Detail titik pengumpulan</li>
+            <li>Rute &amp; jarak tempuh</li>
+            <li>Jam operasional agen</li>
+          </ul>
+        </article>
+
+        <article class="feature feature-hl reveal">
+          <div class="feature-top"><span class="f-ic">🛢️</span><span class="fase fase-dark">Fase 1</span></div>
+          <h3>Setor Minyak Jelantah</h3>
+          <ul>
+            <li>Form ajukan setoran</li>
+            <li>Estimasi berat &amp; harga</li>
+            <li>Pilih titik &amp; jadwal</li>
+            <li>Konfirmasi penyerahan</li>
+          </ul>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-top"><span class="f-ic">💰</span><span class="fase">Fase 2</span></div>
+          <h3>Riwayat &amp; Saldo</h3>
+          <ul>
+            <li>Saldo &amp; poin reward</li>
+            <li>Riwayat setoran</li>
+            <li>Status pencairan uang</li>
+            <li>Unduh bukti setoran</li>
+          </ul>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-top"><span class="f-ic">🏠</span><span class="fase">Fase 2</span></div>
+          <h3>Alamat Rumah Saya</h3>
+          <ul>
+            <li>Tambah alamat</li>
+            <li>Pilih alamat utama</li>
+            <li>Edit &amp; hapus alamat</li>
+            <li>Penanda di peta</li>
+          </ul>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-top"><span class="f-ic">🧾</span><span class="fase">Fase 2</span></div>
+          <h3>Katalog Produk Daur Ulang</h3>
+          <ul>
+            <li>Daftar produk</li>
+            <li>Detail &amp; manfaat produk</li>
+            <li>Harga &amp; cara beli</li>
+            <li>Ulasan pembeli</li>
+          </ul>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-top"><span class="f-ic">📊</span><span class="fase">Fase 3</span></div>
+          <h3>Dampak &amp; Statistik</h3>
+          <ul>
+            <li>Total minyak terkumpul</li>
+            <li>Dampak lingkungan</li>
+            <li>Kontribusi saya</li>
+            <li>Tingkat partisipasi wilayah</li>
+          </ul>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-top"><span class="f-ic">❓</span><span class="fase">Fase 3</span></div>
+          <h3>Panduan, FAQ &amp; Kontak</h3>
+          <ul>
+            <li>Cara kerja CYCLEA</li>
+            <li>Sejarah &amp; visi misi</li>
+            <li>Tanya jawab</li>
+            <li>Hubungi tim</li>
+          </ul>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature-top"><span class="f-ic">👤</span><span class="fase">Fase 4</span></div>
+          <h3>Akun &amp; Menu Profil</h3>
+          <ul>
+            <li>Daftar akun</li>
+            <li>Masuk &amp; keluar</li>
+            <li>Atur profil</li>
+            <li>Notifikasi setoran</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUK ============ -->
+  <section class="section section-tint" id="produk">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">● Katalog Produk</span>
+        <h2>Hasil olahan dari jelantah</h2>
+        <p>Setiap pembelian produk CYCLEA ikut mendanai pengumpulan minyak di komunitas.</p>
+      </div>
+
+      <div class="grid-3 product-grid">
+        <article class="card card-white product reveal"
+          data-name="Sabun Cuci Piring CYCLEA" data-price="Rp 18.000"
+          data-use="Mengangkat lemak membandel pada piring dan alat masak tanpa membuat kulit kering."
+          data-size="Isi 500 ml"
+          data-ing="Minyak jelantah daur ulang, surfaktan nabati, gliserin">
+          <div class="product-img p-green">🧼<span>Paling laris</span></div>
+          <div class="product-body">
+            <div class="product-meta"><span class="tag">Kebersihan</span><span class="rating">★ 4.9</span></div>
+            <h3>Sabun Cuci Piring CYCLEA</h3>
+            <p>Mengangkat lemak membandel tanpa membuat kulit kering. Dibuat dari 100% minyak jelantah daur ulang.</p>
+            <div class="product-foot"><strong>Rp 18.000</strong><button class="btn btn-outline btn-sm" data-detail>Lihat Detail</button></div>
+          </div>
+        </article>
+
+        <article class="card card-white product reveal"
+          data-name="Pembersih Lantai Hijau" data-price="Rp 24.000"
+          data-use="Cairan pembersih lantai dengan wangi lembut, aman untuk septictank dan sistem air rumah tangga."
+          data-size="Isi 1 liter"
+          data-ing="Minyak jelantah daur ulang, alkohol nabati, pewangi lembut">
+          <div class="product-img p-lime">🧴<span>Baru</span></div>
+          <div class="product-body">
+            <div class="product-meta"><span class="tag">Serbaguna</span><span class="rating">★ 4.8</span></div>
+            <h3>Pembersih Lantai Hijau</h3>
+            <p>Cairan pembersih lantai dengan wangi lembut, aman untuk septictank dan sistem air rumah tangga.</p>
+            <div class="product-foot"><strong>Rp 24.000</strong><button class="btn btn-outline btn-sm">Lihat Detail</button></div>
+          </div>
+        </article>
+
+        <article class="card card-white product reveal"
+          data-name="Paket Kebersihan Rumah" data-price="Rp 55.000"
+          data-use="Kombinasi sabun cuci piring, pembersih lantai, dan lap mikro dalam kemasan daur ulang."
+          data-size="Isi 3 item"
+          data-ing="Sabun cuci piring 500 ml, pembersih lantai 1 liter, lap mikro daur ulang">
+          <div class="product-img p-dark">🧽<span>Hemat</span></div>
+          <div class="product-body">
+            <div class="product-meta"><span class="tag">Paket</span><span class="rating">★ 5.0</span></div>
+            <h3>Paket Kebersihan Rumah</h3>
+            <p>Kombinasi sabun cuci piring, pembersih lantai, dan lap mikro dalam kemasan daur ulang.</p>
+            <div class="product-foot"><strong>Rp 55.000</strong><button class="btn btn-outline btn-sm">Lihat Detail</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DAMPAK ============ -->
+  <section class="section" id="dampak">
+    <div class="container">
+      <div class="impact reveal">
+        <div class="impact-copy">
+          <span class="eyebrow light">● Dampak &amp; Statistik</span>
+          <h2>Results that speak<br />for themselves</h2>
+          <p>Angka diperbarui setiap bulan dari seluruh titik pengumpulan CYCLEA.</p>
+          <a href="#faq" class="btn btn-lime">Lihat Laporan Dampak
+            <svg viewBox="0 0 24 24" fill="none" class="btn-ic"><path d="M5 12h13m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="impact-stats">
+          <div class="istat"><strong data-count="12840">0</strong><span>Liter terkumpul</span></div>
+          <div class="istat"><strong data-count="76">0</strong><span>Titik &amp; agen</span></div>
+          <div class="istat"><strong data-count="2150">0</strong><span>Keluarga aktif</span></div>
+          <div class="istat"><strong data-count="38">0</strong><span>Ton CO₂ dicegah</span></div>
+        </div>
+      </div>
+
+      <div class="chart-card reveal">
+        <div class="chart-head">
+          <div>
+            <span class="eyebrow">● Grafik pengumpulan</span>
+            <h3>Minyak jelantah terkumpul per bulan (liter)</h3>
+          </div>
+          <span class="chart-badge">▲ 18,4% vs tahun lalu</span>
+        </div>
+        <div class="chart" id="chart" aria-label="Grafik batang pengumpulan bulanan"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section-tint" id="faq">
+    <div class="container faq-grid">
+      <div class="faq-intro reveal">
+        <span class="eyebrow">● Panduan &amp; FAQ</span>
+        <h2>Pertanyaan yang sering diajukan</h2>
+        <p>Tidak menemukan jawaban? Tim CYCLEA siap membantu setiap hari pukul 08.00–17.00 WIB.</p>
+        <a href="#" class="btn btn-primary">Hubungi Kami
+          <svg viewBox="0 0 24 24" fill="none" class="btn-ic"><path d="M5 12h13m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="mission">
+          <strong>Visi &amp; Misi CYCLEA</strong>
+          <p>Mewujudkan ekonomi sirkular rumah tangga di mana tidak ada minyak jelantah yang terbuang percuma.</p>
+        </div>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item" open>
+          <summary>Apa itu CYCLEA?<span class="chev">+</span></summary>
+          <div class="faq-body">CYCLEA adalah platform digital ekonomi sirkular yang menghubungkan rumah tangga dengan sistem pengumpulan minyak jelantah. Minyak yang terkumpul kemudian diolah kembali menjadi produk bernilai guna seperti sabun.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Bagaimana cara menyetor minyak jelantah?<span class="chev">+</span></summary>
+          <div class="faq-body">Isi form ajukan setoran di website, tentukan perkiraan berat dan titik pengumpulan terdekat, lalu serahkan minyak ke agen pada jadwal yang dipilih. Anda akan menerima saldo dan poin CYCLEA.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Apakah minyak yang dikumpulkan dibayar?<span class="chev">+</span></summary>
+          <div class="faq-body">Ya. Setiap kilogram minyak jelantah dinilai mulai Rp 4.500 dan masuk ke saldo CYCLEA. Saldo dapat dicairkan ke rekening setelah mencapai ambang pencairan tertentu.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Jenis minyak apa saja yang diterima?<span class="chev">+</span></summary>
+          <div class="faq-body">Minyak goreng bekas gorengan rumah tangga (jelantah), minyak kelapa sawit, dan minyak nabati bekas. Tidak menerima minyak kendaraan, solar, atau campuran limbah cair lainnya.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Bagaimana memastikan prosesnya ramah lingkungan?<span class="chev">+</span></summary>
+          <div class="faq-body">Seluruh proses berjalan dalam daur tertutup: penyaringan, pemurnian, saponifikasi, hingga kemasan guna ulang. Tidak ada pembakaran maupun pembuangan ke saluran air.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <div class="cta-glow"></div>
+        <span class="eyebrow light">● Mulai Sekarang</span>
+        <h2>Siap mengubah jelantah<br />menjadi kebaikan?</h2>
+        <p>Bergabunglah bersama ribuan keluarga yang sudah menciptakan dampak bersama CYCLEA.</p>
+        <div class="cta-actions">
+          <a href="#setor" class="btn btn-lime">Ajukan Setoran Pertama</a>
+          <a href="#cara-kerja" class="btn btn-ghost">Pelajari Caranya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#beranda" class="brand">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-4 3.2-6 6.2-6 9.4A6 6 0 0 0 18 12.4C18 9.2 16 6.2 12 3Z" fill="currentColor" opacity=".28"/><path d="M12 3c-4 3.2-6 6.2-6 9.4A6 6 0 0 0 18 12.4C18 9.2 16 6.2 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 20.5V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <span class="brand-name">CYCLEA</span>
+        </a>
+        <p>From Waste to Clean. Platform ekonomi sirkular untuk minyak jelantah rumah tangga.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram CYCLEA">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="7" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok CYCLEA">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4v9.6a3.4 3.4 0 1 1-2.6-3.32" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M14 4c.4 2.3 1.9 3.7 4.2 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp CYCLEA">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20l1.3-4A7.6 7.6 0 1 1 8.6 19L4 20Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.4 9.6c.5 2.4 2.6 4.5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </a>
+          <a href="mailto:halo@cyclea.id" aria-label="Email CYCLEA">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="3" stroke="currentColor" stroke-width="1.7"/><path d="m4.5 8 7.5 5 7.5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h2 class="f-title">Navigasi</h2>
+        <a href="#masalah">Masalah</a>
+        <a href="#cara-kerja">Cara Kerja</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#dampak">Dampak</a>
+      </div>
+      <div class="footer-col">
+        <h2 class="f-title">Program</h2>
+        <a href="#setor">Setor Minyak</a>
+        <a href="register.html">Daftar Akun</a>
+        <a href="login.html">Masuk</a>
+        <a href="#">Titik Pengumpulan</a>
+        <a href="#produk">Katalog Produk</a>
+        <a href="#">Jadi Agen</a>
+      </div>
+      <div class="footer-col">
+        <h2 class="f-title">Kontak</h2>
+        <a href="mailto:halo@cyclea.id">halo@cyclea.id</a>
+        <a href="tel:+6281200001234">+62 812 0000 1234</a>
+        <span>Jl. Hijau Lestari No. 21<br />Yogyakarta, Indonesia</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 CYCLEA. Dibuat dengan pendekatan vibe coding.</span>
+      <span>Privasi · Syarat &amp; Ketentuan</span>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL DETAIL PRODUK ============ -->
+  <div class="modal-overlay" id="productModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal-close" id="modalClose" aria-label="Tutup detail produk">✕</button>
+      <span class="tag">Katalog Produk CYCLEA</span>
+      <h3 id="mTitle">Nama Produk</h3>
+      <p id="mUse">Kegunaan</p>
+      <dl class="modal-specs">
+        <div><dt>Harga</dt><dd id="mPrice">—</dd></div>
+        <div><dt>Ukuran</dt><dd id="mSize">—</dd></div>
+        <div><dt>Kandungan</dt><dd id="mIng">—</dd></div>
+      </dl>
+      <div class="modal-how">
+        <strong>Cara beli</strong>
+        <ol>
+          <li>Buka katalog produk di akun CYCLEA Anda.</li>
+          <li>Pilih produk, lalu bayar dengan saldo CYCLEA atau transfer.</li>
+          <li>Pesanan dikirim dalam 1–3 hari kerja.</li>
+        </ol>
+      </div>
+      <a href="#setor" class="btn btn-primary" id="modalCta">Ajukan Setoran Dahulu</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

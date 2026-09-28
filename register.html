@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Akun — CYCLEA</title>
+  <meta name="description" content="Buat akun CYCLEA untuk mulai menyetorkan minyak jelantah, memantau saldo poin, dan melihat dampaknya bagi lingkungan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="auth.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧴</text></svg>" />
+</head>
+<body class="auth-body">
+
+  <div class="auth-shell">
+
+    <!-- ============ PANEL KIRI ============ -->
+    <aside class="auth-visual">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3c-4 3.2-6 6.2-6 9.4A6 6 0 0 0 18 12.4C18 9.2 16 6.2 12 3Z" fill="currentColor" opacity=".28"/>
+            <path d="M12 3c-4 3.2-6 6.2-6 9.4A6 6 0 0 0 18 12.4C18 9.2 16 6.2 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M12 20.5V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">CYCLEA</span>
+      </a>
+
+      <div class="auth-copy">
+        <span class="pill-badge"><span class="dot"></span> Gabung Program CYCLEA 🌱</span>
+        <h1>Mulai<br />Perjalananmu</h1>
+        <p>Ikuti tiga langkah sederhana ini untuk membuat akun dan mulai menyetorkan minyak jelantah.</p>
+      </div>
+
+      <div class="auth-cards" id="stepCards">
+        <div class="acard is-active" data-card="1">
+          <span class="num">1</span>
+          <div>
+            <strong>Buat akunmu</strong>
+            <small>Isi nomor telepon, nama, dan kata sandi.</small>
+          </div>
+        </div>
+        <div class="acard" data-card="2">
+          <span class="num">2</span>
+          <div>
+            <strong>Atur profil</strong>
+            <small>Email dan alamat titik jemput terdekat.</small>
+          </div>
+        </div>
+        <div class="acard" data-card="3">
+          <span class="num">3</span>
+          <div>
+            <strong>Verifikasi</strong>
+            <small>Masukkan kode OTP untuk mengaktifkan akun.</small>
+          </div>
+        </div>
+      </div>
+
+      <a href="index.html" class="back-link">← Kembali ke beranda</a>
+    </aside>
+
+    <!-- ============ PANEL KANAN ============ -->
+    <main class="auth-panel">
+      <div class="auth-inner">
+
+        <a href="index.html" class="brand auth-brand-mobile">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3c-4 3.2-6 6.2-6 9.4A6 6 0 0 0 18 12.4C18 9.2 16 6.2 12 3Z" fill="currentColor" opacity=".28"/>
+              <path d="M12 3c-4 3.2-6 6.2-6 9.4A6 6 0 0 0 18 12.4C18 9.2 16 6.2 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M12 20.5V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand-name">CYCLEA</span>
+        </a>
+
+        <!-- form pendaftaran -->
+        <form id="regForm" novalidate>
+          <div class="alert" id="regAlert"></div>
+
+          <!-- LANGKAH 1 -->
+          <section class="form-step" data-step="1">
+            <span class="auth-step-tag">Langkah 1 dari 3 · Buat akun</span>
+            <h2>Bergabung dengan CYCLEA</h2>
+            <p class="auth-sub">Lengkapi data dasar untuk mulai berkontribusi.</p>
+
+            <div class="field" data-rule="phone">
+              <label for="phone">Nomor telepon</label>
+              <div class="phone-control">
+                <span class="prefix">🇮🇩 +62</span>
+                <input class="control" type="tel" id="phone" name="phone" inputmode="numeric" placeholder="812 0000 1234" autocomplete="tel" />
+              </div>
+              <span class="msg-error">Masukkan nomor telepon yang valid (min. 9 digit).</span>
+            </div>
+
+            <div class="row-2">
+              <div class="field" data-rule="fullname">
+                <label for="fullname">Nama lengkap</label>
+                <input class="control" type="text" id="fullname" name="fullname" placeholder="Juliette Prameswari" autocomplete="name" />
+                <span class="msg-error">Nama minimal 3 huruf.</span>
+              </div>
+              <div class="field" data-rule="username">
+                <label for="username">Username</label>
+                <div class="has-check">
+                  <input class="control has-check" type="text" id="username" name="username" placeholder="cyclea_ku" autocomplete="username" />
+                  <span class="check-mark">✓</span>
+                </div>
+                <span class="msg-error">3–16 karakter: huruf, angka, titik, atau garis bawah.</span>
+              </div>
+            </div>
+
+            <div class="field" data-rule="password">
+              <label for="password">Kata sandi</label>
+              <div class="pw-wrap">
+                <input class="control" type="password" id="password" name="password" placeholder="••••••••••••" autocomplete="new-password" />
+                <button type="button" class="eye-btn" data-toggle-pw="password" aria-label="Tampilkan kata sandi">
+                  <svg class="eye-on" viewBox="0 0 24 24" fill="none"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.7"/></svg>
+                  <svg class="eye-off" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M9.9 5.9A9.6 9.6 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3.2 4M6.3 8A17 17 0 0 0 2.5 12S6 18.5 12 18.5c1 0 2-.15 2.9-.45" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                </button>
+              </div>
+              <ul class="rules" id="pwRules">
+                <li data-r="min">Minimal 12 karakter</li>
+                <li data-r="max">Maksimal 20 karakter</li>
+                <li data-r="case">Huruf besar dan huruf kecil</li>
+                <li data-r="num">Angka dan simbol</li>
+              </ul>
+            </div>
+
+            <button type="submit" class="btn btn-auth" data-next="1">Lanjutkan</button>
+
+            <p class="auth-switch">Sudah punya akun? <a href="login.html">Masuk</a></p>
+          </section>
+
+          <!-- LANGKAH 2 -->
+          <section class="form-step" data-step="2" hidden>
+            <span class="auth-step-tag">Langkah 2 dari 3 · Profil</span>
+            <h2>Atur informasi profil</h2>
+            <p class="auth-sub">Dipakai untuk mengirim bukti setoran dan titik jemput terdekat.</p>
+
+            <div class="field" data-rule="email">
+              <label for="email">Alamat email</label>
+              <input class="control" type="email" id="email" name="email" placeholder="nama@email.com" autocomplete="email" />
+              <span class="msg-error">Format email belum benar.</span>
+            </div>
+
+            <div class="field" data-rule="city">
+              <label for="city">Kota / Kabupaten</label>
+              <select class="control" id="city" name="city">
+                <option value="">Pilih wilayah domisili</option>
+                <option>Kota Yogyakarta</option>
+                <option>Kabupaten Sleman</option>
+                <option>Kota Semarang</option>
+                <option>Kota Surabaya</option>
+                <option>Jakarta Selatan</option>
+                <option>Lainnya</option>
+              </select>
+              <span class="msg-error">Pilih salah satu wilayah.</span>
+            </div>
+
+            <div class="field" data-rule="address">
+              <label for="address">Alamat lengkap</label>
+              <textarea class="control" id="address" name="address" placeholder="Nama jalan, nomor rumah, RT/RW, kode pos"></textarea>
+              <span class="msg-error">Alamat minimal 10 karakter.</span>
+            </div>
+
+            <div class="note-box">
+              <span>📍</span>
+              <div>Alamat ini menjadi <strong>titik jemput</strong> saat kamu mengajukan setoran minyak jelantah.</div>
+            </div>
+
+            <div class="action-row">
+              <button type="button" class="btn btn-ghost-auth" data-back="2">Kembali</button>
+              <button type="submit" class="btn btn-auth" data-next="2">Lanjutkan</button>
+            </div>
+          </section>
+
+          <!-- LANGKAH 3 -->
+          <section class="form-step" data-step="3" hidden>
+            <span class="auth-step-tag">Langkah 3 dari 3 · Verifikasi</span>
+            <h2>Masukkan kode verifikasi</h2>
+            <p class="auth-sub">Kami mengirim kode 6 digit ke <strong id="maskPhone">+62 •••• •••• 1234</strong>.</p>
+
+            <div class="field" data-rule="otp">
+              <label>Kode OTP</label>
+              <div class="otp" id="otp">
+                <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit ke-1" />
+                <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit ke-2" />
+                <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit ke-3" />
+                <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit ke-4" />
+                <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit ke-5" />
+                <input type="text" inputmode="numeric" maxlength="1" aria-label="Digit ke-6" />
+              </div>
+              <span class="msg-error">Masukkan 6 digit kode verifikasi.</span>
+            </div>
+
+            <p class="resend">Tidak menerima kode? <button type="button" id="resendBtn" disabled>Kirim ulang dalam <span id="resendTimer">60</span>d</button></p>
+
+            <div class="action-row">
+              <button type="button" class="btn btn-ghost-auth" data-back="3">Kembali</button>
+              <button type="submit" class="btn btn-auth" data-next="3">Verifikasi &amp; Selesai</button>
+            </div>
+          </section>
+        </form>
+
+        <!-- halaman sukses -->
+        <div class="auth-success" id="regSuccess" hidden>
+          <div class="success-ic">✅</div>
+          <h2>Akun berhasil dibuat</h2>
+          <p>Selamat datang di CYCLEA, <strong id="welcomeName">Pengguna</strong>.<br />Mulai kumpulkan minyak jelantahmu dan lihat dampaknya.</p>
+          <a href="index.html" class="btn btn-auth">Ke Beranda</a>
+          <a href="login.html" class="btn btn-ghost-auth" style="margin-top:12px;">Masuk ke Akun</a>
+        </div>
+
+        <!-- blok bawah -->
+        <div id="authFooter">
+          <div class="divider">atau</div>
+          <button type="button" class="btn-social" id="googleBtn">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21.6 12.2c0-.7-.06-1.36-.18-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.24c1.9-1.75 2.96-4.33 2.96-7.3Z" fill="#4285F4"/>
+              <path d="M12 22c2.7 0 4.96-.9 6.62-2.42l-3.24-2.5c-.9.6-2.05.96-3.38.96-2.6 0-4.8-1.76-5.6-4.12H3.06v2.58A10 10 0 0 0 12 22Z" fill="#34A853"/>
+              <path d="M6.4 13.92a6 6 0 0 1 0-3.84V7.5H3.06a10 10 0 0 0 0 9l3.34-2.58Z" fill="#FBBC05"/>
+              <path d="M12 5.96c1.47 0 2.79.5 3.83 1.5l2.86-2.86C16.95 2.98 14.7 2 12 2a10 10 0 0 0-8.94 5.5l3.34 2.58C7.2 7.72 9.4 5.96 12 5.96Z" fill="#EA4335"/>
+            </svg>
+            Daftar dengan Google
+          </button>
+          <p class="terms">Dengan mendaftar, saya menyatakan telah membaca dan menyetujui
+            <a href="#">Kebijakan Privasi</a> serta <a href="#">Syarat &amp; Ketentuan</a> CYCLEA.</p>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
