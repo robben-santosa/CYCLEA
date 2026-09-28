@@ -1,7 +1,6 @@
 # CYCLEA — *From Waste to Clean*
 
-KLIK LINK DI BAWAH INI UNTUK MENUJU KE WEBSITE KITA
-https://cyclea-yspc.vercel.app/
+# 🌐 **[KLIK DI SINI UNTUK KE WEBSITE](https://cyclea-yspc.vercel.app/)**
 
 Prototype website **CYCLEA**, platform digital ekonomi sirkular untuk mengatasi permasalahan
 minyak jelantah rumah tangga. Website ini dibuat dengan pendekatan **vibe coding**:
